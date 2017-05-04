@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guopeidong.com/"/>
-  <updated>2017-05-04T03:01:56.000Z</updated>
+  <updated>2017-05-04T06:42:48.000Z</updated>
   <id>http://guopeidong.com/</id>
   
   <author>
@@ -16,26 +16,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://guopeidong.com/2017/05/04/hello-world/"/>
-    <id>http://guopeidong.com/2017/05/04/hello-world/</id>
-    <published>2017-05-04T03:01:56.000Z</published>
-    <updated>2017-05-04T03:01:56.000Z</updated>
+    <title>hybird</title>
+    <link href="http://guopeidong.com/2017/05/04/hybird/"/>
+    <id>http://guopeidong.com/2017/05/04/hybird/</id>
+    <published>2017-05-04T06:42:00.000Z</published>
+    <updated>2017-05-04T06:42:48.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<h1 id="hybird-APP-开发"><a href="#hybird-APP-开发" class="headerlink" title="hybird APP 开发"></a>hybird APP 开发</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><pre><code>1. 在现有的APP中嵌入一些业务尝试页面；
+2. 可以热更新；
+3. 时间要快，技术要成熟；
+</code></pre><h2 id="四种方案"><a href="#四种方案" class="headerlink" title="四种方案"></a>四种方案</h2><pre><code>1. ionic
+2. react native
+3. weex
+4. 原生APP直接调用H5页面
+</code></pre><h3 id="ionic"><a href="#ionic" class="headerlink" title="ionic"></a>ionic</h3><p>较易入手；<br>github 28K+ star<br>社区较好，坑基本填平，需要学习angularJs</p>
+<h3 id="react-native"><a href="#react-native" class="headerlink" title="react native"></a>react native</h3><p>最稳定，性能好；<br>github 45K+ star<br>社区活跃，生态较好，学习路线较陡峭 react 全家桶<br>可单独开发APP<br>可内嵌已有APP</p>
+<h3 id="weex"><a href="#weex" class="headerlink" title="weex"></a>weex</h3><p>最不确定；<br>github 13K+ star<br>以目前调查来看，坑比较多，版本不稳定，已有APP案例较少,社区还不怎么活跃</p>
+<h3 id="原生APP直接调用H5页面"><a href="#原生APP直接调用H5页面" class="headerlink" title="原生APP直接调用H5页面"></a>原生APP直接调用H5页面</h3><p>最简单，性能一般；<br>利用原生APP的webview直接渲染远程页面，交互利用提供的接口，也可引入jsbridges。</p>
+<p>苹果禁止使用Rollout与JSPatch两种热更新方案。而在RN中使用CodePush进行热更新并不在警告范围内，并且在“热修复门”发生后，使用CodePush热更新方案的RN应用仍然可以通过苹果商店的上架审核。<br>苹果禁止的是“基于反射的热更新“，而不是 “基于沙盒接口的热更新”。而大部分的应用框架（如 React-Native）和游戏引擎（比如 Unity ，Cocos2d-x，白鹭引擎等）都属于后者，所以不在被警告范围内</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;h1 id=&quot;hybird-APP-开发&quot;&gt;&lt;a href=&quot;#hybird-APP-开发&quot; class=&quot;headerlink&quot; title=&quot;hybird APP 开发&quot;&gt;&lt;/a&gt;hybird APP 开发&lt;/h1&gt;&lt;h2 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; cla
     
     </summary>
     
