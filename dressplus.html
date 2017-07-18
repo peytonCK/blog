@@ -127,7 +127,7 @@
             if (!$(this).hasClass('current')) {
                 $('.category').removeClass('current');
                 $(this).addClass('current');
-                $.getJSON("detectDataJSONs/"+category + ".json", function(data) {　 //each循环 
+                $.getJSON("http://ot2gqnlv6.bkt.clouddn.com/dressplus/goodsdata/"+category + ".json", function(data) {　 //each循环 
                     categoryData = data;
                     //console.log(categoryData)
                     renderCategoryData();
